@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+using Dante;
 using UnityEngine;
 
 public class CraneAnimationEvents : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] protected CraneManager craneManager;
 
-    // Update is called once per frame
-    void Update()
+    public void StateMechanic(CraneStates state)
     {
-        
+        craneManager.StateMechanic(state);
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine.XR.Content.Interaction;
 namespace Dante {
 
     public enum CraneStates {
-        NONE, INTERACTABLE, SHIPPING
+        NONE, RESTART, INTERACTABLE, SHIPPING
     }
 
 	public class CraneManager : MonoBehaviour
@@ -12,10 +12,13 @@ namespace Dante {
 		#region References
 
 		[SerializeField] protected XRJoystick _joystick;
+        [SerializeField] protected XRPushButton _xRPushButton;
 		//[SerializeField] protected XRLever _xRLever;
         [SerializeField] protected Rigidbody _rigidbody;
+        [SerializeField] protected Animator _animator;
 
         [SerializeField] protected Transform _winZone;
+        [SerializeField] protected Transform _defaultZone;
 
         #endregion
 
@@ -37,8 +40,7 @@ namespace Dante {
 
         private void OnEnable()
         {
-            GetJoystickListeners();
-
+            StateMechanic(CraneStates.RESTART);
         }
 
         private void OnDisable()
@@ -63,16 +65,16 @@ namespace Dante {
 
         public void RemoveAllJoystickListeners()
         {
-            _joystick.onValueChangeX.RemoveAllListeners();
-            _joystick.onValueChangeY.RemoveAllListeners();
+            _joystick.onValueChangeX?.RemoveAllListeners();
+            _joystick.onValueChangeY?.RemoveAllListeners();
             _input = Vector3.zero;
         }
 
         public void GetJoystickListeners()
         {
+            RemoveAllJoystickListeners();
             _joystick.onValueChangeX.AddListener(MoveCraneX);
             _joystick.onValueChangeY.AddListener(MoveCraneZ);
-            StateMechanic(CraneStates.INTERACTABLE);
         }
 
         #endregion
@@ -82,25 +84,40 @@ namespace Dante {
         protected void InitializeState() {
             switch (craneState) {
                 case CraneStates.INTERACTABLE:
-
+                    GetJoystickListeners();
+                    _input = Vector3.zero;
+                    _rigidbody.velocity = Vector3.zero;
+                    _rigidbody.isKinematic = false;
+                    _rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
                     break;
 
                 case CraneStates.SHIPPING:
-
+                    _rigidbody.isKinematic= true;
                     break;
             }
         }
         protected void ExecuteState() {
             switch (craneState) {
+                case CraneStates.RESTART:
+                    Vector3 tempCraneDefaultDirection = (_defaultZone.position - transform.position).normalized;
+                    MoveCrane(tempCraneDefaultDirection);
+                    if (Vector3.Distance(transform.position, _defaultZone.position) < 0.2f)
+                    {
+                        StateMechanic(CraneStates.INTERACTABLE);
+                    }
+                    break;
+
                 case CraneStates.INTERACTABLE:
                     if(_input.magnitude > 0)
                         MoveCrane(_input);
                     break;
+
                 case CraneStates.SHIPPING:
-                    Vector3 tempCraneDirection = (transform.position - _winZone.position).normalized;
+                    Vector3 tempCraneDirection = (_winZone.position - transform.position).normalized;
                     MoveCrane(tempCraneDirection);
-                    if(Vector3.Distance(transform.position, _winZone.position) < 0.1f) {
-                        StateMechanic(CraneStates.INTERACTABLE);
+                    if(Vector3.Distance(transform.position, _winZone.position) < 0.2f) {
+                        _animator.SetBool("Release", true);
+                        _animator.SetBool("Release", true);
                     }
                     break;
             }
@@ -108,12 +125,16 @@ namespace Dante {
 
         protected void FinalizeState() {
             switch (craneState) {
-                case CraneStates.INTERACTABLE:
+                case CraneStates.RESTART:
+                    _xRPushButton.toggleValue = false;
+                    break;
 
+                case CraneStates.INTERACTABLE:
+                    _xRPushButton.toggleValue = true;
                     break;
 
                 case CraneStates.SHIPPING:
-
+                    _animator.SetBool("Release", false);
                     break;
             }
         }

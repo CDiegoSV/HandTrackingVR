@@ -114,10 +114,13 @@ namespace Dante {
 
                 case CraneStates.SHIPPING:
                     Vector3 tempCraneDirection = (_winZone.position - transform.position).normalized;
-                    MoveCrane(tempCraneDirection);
                     if(Vector3.Distance(transform.position, _winZone.position) < 0.2f) {
                         _animator.SetBool("Release", true);
-                        _animator.SetBool("Release", true);
+                        _rigidbody.velocity = Vector3.zero;
+                    }
+                    else
+                    {
+                        MoveCrane(tempCraneDirection);
                     }
                     break;
             }
@@ -135,6 +138,7 @@ namespace Dante {
 
                 case CraneStates.SHIPPING:
                     _animator.SetBool("Release", false);
+
                     break;
             }
         }

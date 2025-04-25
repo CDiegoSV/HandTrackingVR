@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Right Hand Mask
+  m_Mask: 00000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Left.Armature
+    m_Weight: 0
+  - m_Path: Left.Armature/Bone_Hand
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreIndex
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle/Bone_IndexUpper
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle/Bone_IndexUpper/Bone_IndexUpper_end
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle/Bone_MiddleUpper
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle/Bone_MiddleUpper/Bone_MiddleUpper_end
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PrePink
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle/Bone_PinkUpper
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle/Bone_PinkUpper/Bone_PinkUpper_end
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreRing
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle/Bone_RingUpper
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle/Bone_RingUpper/Bone_RingUpper_end
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreThumb
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle/Bone_ThumbUpper
+    m_Weight: 1
+  - m_Path: Left.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle/Bone_ThumbUpper/Bone_ThumbUpper_end
+    m_Weight: 1
+  - m_Path: Left.Hand
+    m_Weight: 0
+  - m_Path: Left.Index_Joint001
+    m_Weight: 0
+  - m_Path: Left.Index_Joint002
+    m_Weight: 0
+  - m_Path: Left.Index_Lower
+    m_Weight: 0
+  - m_Path: Left.Index_Middle001
+    m_Weight: 0
+  - m_Path: Left.Index_Middle002
+    m_Weight: 0
+  - m_Path: Left.Index_Upper
+    m_Weight: 0
+  - m_Path: Left.Middle_Joint001
+    m_Weight: 0
+  - m_Path: Left.Middle_Joint002
+    m_Weight: 0
+  - m_Path: Left.Middle_Lower
+    m_Weight: 0
+  - m_Path: Left.Middle_Middle001
+    m_Weight: 0
+  - m_Path: Left.Middle_Middle002
+    m_Weight: 0
+  - m_Path: Left.Middle_Upper
+    m_Weight: 0
+  - m_Path: Left.Pink_Joint001
+    m_Weight: 0
+  - m_Path: Left.Pink_Joint002
+    m_Weight: 0
+  - m_Path: Left.Pink_Lower
+    m_Weight: 0
+  - m_Path: Left.Pink_Middle001
+    m_Weight: 0
+  - m_Path: Left.Pink_Middle002
+    m_Weight: 0
+  - m_Path: Left.Pink_Upper
+    m_Weight: 0
+  - m_Path: Left.Ring_Joint001
+    m_Weight: 0
+  - m_Path: Left.Ring_Joint002
+    m_Weight: 0
+  - m_Path: Left.Ring_Lower
+    m_Weight: 0
+  - m_Path: Left.Ring_Middle001
+    m_Weight: 0
+  - m_Path: Left.Ring_Middle002
+    m_Weight: 0
+  - m_Path: Left.Ring_Upper
+    m_Weight: 0
+  - m_Path: Left.Thumb_Joint001
+    m_Weight: 0
+  - m_Path: Left.Thumb_Joint002
+    m_Weight: 0
+  - m_Path: Left.Thumb_Lower
+    m_Weight: 0
+  - m_Path: Left.Thumb_Middle001
+    m_Weight: 0
+  - m_Path: Left.Thumb_Middle002
+    m_Weight: 0
+  - m_Path: Left.Thumb_Upper
+    m_Weight: 0
+  - m_Path: Right.Armature
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreIndex
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle/Bone_IndexUpper
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreIndex/Bone_IndexLower/Bone_IndexMiddle/Bone_IndexUpper/Bone_IndexUpper_end
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle/Bone_MiddleUpper
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreMiddle/Bone_MiddleLower/Bone_MiddleMiddle/Bone_MiddleUpper/Bone_MiddleUpper_end
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PrePink
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle/Bone_PinkUpper
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PrePink/Bone_PinkLower/Bone_PinkMiddle/Bone_PinkUpper/Bone_PinkUpper_end
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreRing
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle/Bone_RingUpper
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreRing/Bone_RingLower/Bone_RingMiddle/Bone_RingUpper/Bone_RingUpper_end
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreThumb
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle/Bone_ThumbUpper
+    m_Weight: 1
+  - m_Path: Right.Armature/Bone_Hand/Bone_PreThumb/Bone_ThumbLower/Bone_ThumbMiddle/Bone_ThumbUpper/Bone_ThumbUpper_end
+    m_Weight: 1
+  - m_Path: Right.Hand
+    m_Weight: 0
+  - m_Path: Right.Index_Joint001
+    m_Weight: 0
+  - m_Path: Right.Index_Joint002
+    m_Weight: 0
+  - m_Path: Right.Index_Lower
+    m_Weight: 0
+  - m_Path: Right.Index_Middle001
+    m_Weight: 0
+  - m_Path: Right.Index_Middle002
+    m_Weight: 0
+  - m_Path: Right.Index_Upper
+    m_Weight: 0
+  - m_Path: Right.Middle_Joint001
+    m_Weight: 0
+  - m_Path: Right.Middle_Joint002
+    m_Weight: 0
+  - m_Path: Right.Middle_Lower
+    m_Weight: 0
+  - m_Path: Right.Middle_Middle001
+    m_Weight: 0
+  - m_Path: Right.Middle_Middle002
+    m_Weight: 0
+  - m_Path: Right.Middle_Upper
+    m_Weight: 0
+  - m_Path: Right.Pink_Joint001
+    m_Weight: 0
+  - m_Path: Right.Pink_Joint002
+    m_Weight: 0
+  - m_Path: Right.Pink_Lower
+    m_Weight: 0
+  - m_Path: Right.Pink_Middle001
+    m_Weight: 0
+  - m_Path: Right.Pink_Middle002
+    m_Weight: 0
+  - m_Path: Right.Pink_Upper
+    m_Weight: 0
+  - m_Path: Right.Ring_Joint001
+    m_Weight: 0
+  - m_Path: Right.Ring_Joint002
+    m_Weight: 0
+  - m_Path: Right.Ring_Lower
+    m_Weight: 0
+  - m_Path: Right.Ring_Middle001
+    m_Weight: 0
+  - m_Path: Right.Ring_Middle002
+    m_Weight: 0
+  - m_Path: Right.Ring_Upper
+    m_Weight: 0
+  - m_Path: Right.Thumb_Joint001
+    m_Weight: 0
+  - m_Path: Right.Thumb_Joint002
+    m_Weight: 0
+  - m_Path: Right.Thumb_Lower
+    m_Weight: 0
+  - m_Path: Right.Thumb_Middle001
+    m_Weight: 0
+  - m_Path: Right.Thumb_Middle002
+    m_Weight: 0
+  - m_Path: Right.Thumb_Upper
+    m_Weight: 0

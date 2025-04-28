@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Anchor Blue Glow
+  m_Name: GreenLaser
   m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   m_ValidKeywords:
   - _SURFACE_TYPE_TRANSPARENT
@@ -41,7 +41,7 @@ Material:
     m_TexEnvs:
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 7461125ec591a1548883bd61123e9138, type: 3}
-        m_Scale: {x: 1, y: -0.61}
+        m_Scale: {x: 1, y: -0.27}
         m_Offset: {x: 0, y: 0.24}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -65,7 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0.3}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 7461125ec591a1548883bd61123e9138, type: 3}
-        m_Scale: {x: 1, y: -0.61}
+        m_Scale: {x: 1, y: -0.27}
         m_Offset: {x: 0, y: 0.24}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -151,10 +151,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.1254901, g: 0.5882353, b: 0.9529411, a: 1}
+    - _BaseColor: {r: 0.11399746, g: 1, b: 0, a: 1}
     - _BaseColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.12549007, g: 0.5882353, b: 0.9529411, a: 1}
+    - _Color: {r: 0.11399744, g: 1, b: 0, a: 1}
     - _ColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}

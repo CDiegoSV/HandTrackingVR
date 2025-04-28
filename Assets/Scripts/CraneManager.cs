@@ -20,6 +20,10 @@ namespace Dante {
         [SerializeField] protected Transform _winZone;
         [SerializeField] protected Transform _defaultZone;
 
+        [SerializeField] protected MeshRenderer _laserMeshRenderer;
+        [SerializeField] protected Material[] _laserRedMaterials;
+        [SerializeField] protected Material[] _laserGreenMaterials;
+
         #endregion
 
         #region Knobs
@@ -30,9 +34,11 @@ namespace Dante {
 
         #region RuntimeVariables
 
-        protected CraneStates craneState;
+        [SerializeField] protected CraneStates craneState;
 
         protected Vector3 _input;
+
+        protected bool _laserColor;
 
         #endregion
 
@@ -75,6 +81,22 @@ namespace Dante {
             RemoveAllJoystickListeners();
             _joystick.onValueChangeX.AddListener(MoveCraneX);
             _joystick.onValueChangeY.AddListener(MoveCraneZ);
+        }
+
+        public void ChangeLaserColor()
+        {
+            if(!_laserColor)  
+            {
+                Debug.Log("True");
+                _laserMeshRenderer.materials = _laserGreenMaterials;
+                _laserColor = !_laserColor;
+            }
+            else
+            {
+                Debug.Log("False");
+                _laserMeshRenderer.materials = _laserRedMaterials;
+                _laserColor = !_laserColor;
+            }
         }
 
         #endregion
